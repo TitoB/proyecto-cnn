@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CNNPolitics - Politicl News, Analisys and Opinion</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+  </head>
+  <body>
+  
+  <header class="bg-dark navbar-static-top" mode="light">
+    <div class="container-fluid">
+		<div class="row-header">	
+			<div class="row-header">
+			<div class="col-md-12">		
+				<nav class="navbar navbar-expand-md navbar-light bg-dark">		 
+					
+					<ul class="nav nav-pills">
+                        <li class="nav-item"><a href="./index.html">
+                            <img src="img/cnn-politics.png" alt="" width="111" height="27" class="logo img-fluid">
+							</a>
+                        </li>
+                    
+						<li class="nav-item">
+							<a class="nav-link disabled" href="#">The Biden Presidency</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link disabled" href="#">Facts First</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link disabled" href="#">US Elections</a>
+						</li>
+						
+                        <div class="nav-item dropdown ml-md-auto">
+                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Edition
+                            </a>
+                          
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                              <a class="dropdown-item" href="./usa.html#">U.S</a>
+                              <a class="dropdown-item" href="./world.html">International</a>
+                              <a class="dropdown-item" href="#">Espa�ol</a>
+                            </div>
+                        </div>
+                       
+                        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-4">
+                            <button tabindex="-1" data-test="searchButton" data-zjs="click" class="nav-item">
+                                <svg class="search-icon" style="outline:0" width="24" height="24" viewBox="0 0 64 64" fill="currentColor" tabindex="0" focusable="true" xmlns="https://www.w3.org/2000/svg" aria-labelledby="searchIconTitle" role="img">
+                                <title id="searchIconTitle">Search CNN</title>
+                                <path d="M55.3,51.89,42.46,39a19.22,19.22,0,1,0-3.38,3.43L51.9,55.29a2.38,2.38,0,0,0,3.4,0A2.42,2.42,0,0,0,55.3,51.89ZM11.2,27.28a16,16,0,1,1,16,16.07A16.07,16.07,0,0,1,11.2,27.28Z">
+                                </path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-4">
+                            <div id="account-icon-button" tabindex="-1" role="button" data-zjs="click" data-zjs-campaign="header-user-icon" data-zjs-logged-in-state="false" class="Box-sc-1fet97o-0 indexes__AccountIconButton-nujtvs-0 hxmCmq">
+                                <svg class="user-icon" style="outline: currentcolor none 0px;" width="24" height="24" viewBox="0 0 64 64" fill="currentColor" tabindex="0" focusable="true" xmlns="https://www.w3.org/2000/svg" aria-labelledby="userIconTitle" role="img">
+                                    <title id="userIconTitle">User Account</title>
+                                    <path fill-rule="evenodd" d="M32,59.7c-7.9,0-15.5-3.4-20.7-9.3c0.8-1.5,2-2.7,3.4-3.5c4.2-2.5,10.4-3.9,16.9-3.9s12.6,1.4,16.9,3.9 c1.7,0.9,3,2.3,3.6,4.1C47,56.5,39.6,59.7,32,59.7 M36.9,36.7c-5.1,2.9-11.6,1.1-14.5-4c-1.8-3.3-1.8-7.2,0-10.4 c0.9-1.7,2.3-3.3,4.1-4.1c5.2-2.8,11.7-0.9,14.5,4.3c1.7,3.1,1.7,7.1,0,10.2C40,34.4,38.6,35.8,36.9,36.7 M42.3,6.2 c7.5,2.7,13.3,8.8,15.8,16.3c2.9,8.2,1.8,17.5-3,24.8c-1.1-1.7-2.6-3.1-4.3-4.1c-3.3-1.8-6.8-3-10.5-3.7c4.9-3.4,7.3-9.3,6.1-15.2 c-1.2-6-6-10.5-11.9-11.5c-8-1.5-15.8,3.7-17.4,11.7c-1.1,5.9,1.3,11.7,6.2,15.1c-3.7,0.7-7.4,1.8-10.6,3.7 c-1.5,0.9-2.9,2.1-3.9,3.5C5.7,42.3,4.3,37.2,4.3,32C4.3,13.5,22.8-1,42.3,6.2 M42.6,1.8C25.9-4,7.6,4.8,1.8,21.5 c-2.4,6.8-2.4,14.3,0,21.2c3,9.2,10.3,16.5,19.5,19.5c16.7,5.9,35-2.9,40.9-19.7c2.4-6.8,2.4-14.3,0-21.2 C59.2,12.1,52,4.9,42.6,1.8"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-1 col-md-1 col-sm-6 col-xs-4">
+                            <button id="menuButton" tabindex="-1" data-test="menuButton" data-zjs="click" data-zjs-campaign="header-expanded-nav-btn" class="nav-item">
+                                <svg class="menu-icon" style="outline:0" width="24" height="24" viewBox="0 0 64 64" fill="currentColor" tabindex="0" focusable="true" xmlns="https://www.w3.org/2000/svg" aria-labelledby="menuIconTitle" role="img">
+                                    <title id="menuIconTitle">Open Menu</title>
+                                    <path d="M52.75,47.84H11.25a2.08,2.08,0,1,0,0,4.16h41.5a2.08,2.08,0,1,0,0-4.16Z"></path>
+                                    <path d="M52.75,28.92H11.25a2.08,2.08,0,1,0,0,4.16h41.5a2.08,2.08,0,1,0,0-4.16Z"></path><path d="M11.25,14.16h41.5a2.08,2.08,0,1,0,0-4.16H11.25a2.08,2.08,0,1,0,0,4.16Z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </ul>
+				</nav>	
+			</div>
+			</div>	
+		</div>
+	</div><!-- .bg-dark -->
+	</header>
+	<div class="body-content">
+	<div class="row containers">
+			<div class="col-md-4">
+				<div class="card bg-default">
+					<div class="media">
+					
+					<img src="./imgs/211101094728-u-s-capitol-building-1028-medium-tease.jpg" alt="" class="img-fluid"/>  
+					</div>
+					<div>
+						<a href="">
+						<h3>'A 50-50 Senate sucks': Dejected Democrats fret over agenda failure amid grim 2022 outlook</h3>
+						</a>	
+					</div>
+					<li>
+						<article class="cd cd--card cd--article cd--idx-2 cd--extra-small cd--has-siblings cd--media__image" data-vr-contentbox="/2021/12/16/politics/ken-cuccinelli-january-6/index.html" data-eq-pts="xsmall: 0, small: 300, medium: 460, large: 780, full16x9: 1100" data-section-name="politics" data-eq-state="xsmall small">
+							<div class="cd__wrapper" data-analytics="_list-hierarchical-xs_article_">
+								<div class="cd__content">
+									<h3 class="cd__headline" data-analytics="_list-hierarchical-xs_article_">
+										<a href="/2021/12/16/politics/ken-cuccinelli-january-6/index.html">
+											<span class="cd__headline-text vid-left-enabled">Former Homeland Security official Cuccinelli talks to January 6 committee
+											</span>
+											<span class="cd__headline-icon cnn-icon">
+											</span>
+										</a>
+									</h3>
+								</div>
+							</div>
+						</article>
+					</li>
+					
+					<li>
+						<article class="cd cd--card cd--article cd--idx-1 cd--extra-small cd--has-siblings cd--media__image" data-vr-contentbox="/2021/12/16/politics/voting-rights-senate-sinema-manchin/index.html" data-eq-pts="xsmall: 0, small: 300, medium: 460, large: 780, full16x9: 1100" data-section-name="politics" data-eq-state="xsmall small">
+							 <div class="cd__wrapper" data-analytics="_list-hierarchical-xs_article_">
+								<div class="cd__content">
+									<h3 class="cd__headline" data-analytics="_list-hierarchical-xs_article_">
+										<a href="/2021/12/16/politics/voting-rights-senate-sinema-manchin/index.html">
+											<span class="cd__headline-text vid-left-enabled">Analysis: Here's why voting rights legislation isn't going anywhere this year</span>
+											<span class="cd__headline-icon cnn-icon">
+											</span>
+										</a>
+									</h3>
+								</div>
+							</div>
+						</article>
+					</li>
+					<li>
+						<article class="cd cd--card cd--article cd--idx-2 cd--extra-small cd--has-siblings cd--media__image" data-vr-contentbox="/2021/12/16/politics/ken-cuccinelli-january-6/index.html" data-eq-pts="xsmall: 0, small: 300, medium: 460, large: 780, full16x9: 1100" data-section-name="politics" data-eq-state="xsmall small">
+							<div class="cd__wrapper" data-analytics="_list-hierarchical-xs_article_">
+								<div class="cd__content">
+									<h3 class="cd__headline" data-analytics="_list-hierarchical-xs_article_">
+										<a href="/2021/12/16/politics/ken-cuccinelli-january-6/index.html">
+											<span class="cd__headline-text vid-left-enabled">Former Homeland Security official Cuccinelli talks to January 6 committee</span>
+											<span class="cd__headline-icon cnn-icon">
+											</span>
+										</a>
+									</h3>
+								</div>
+							</div>
+						</article>
+					</li>
+					<li>
+						<article class="cd cd--card cd--article cd--idx-3 cd--extra-small cd--has-siblings cd--media__image" data-vr-contentbox="/2021/12/16/politics/january-6-committee-subpoena-retired-colonel-power-point/index.html" data-eq-pts="xsmall: 0, small: 300, medium: 460, large: 780, full16x9: 1100" data-section-name="politics" data-eq-state="xsmall small">
+						<div class="cd__wrapper" data-analytics="_list-hierarchical-xs_article_">
+							<div class="cd__content">
+									<h3 class="cd__headline" data-analytics="_list-hierarchical-xs_article_">
+										<a href="/2021/12/16/politics/january-6-committee-subpoena-retired-colonel-power-point/index.html">
+											<span class="cd__headline-text vid-left-enabled">January 6 committee subpoenas retired colonel who shared election fraud PowerPoint presentation</span>
+											<span class="cd__headline-icon cnn-icon">
+											</span>
+										</a>
+									</h3>
+								</div>
+							</div>
+						</article>
+					</li>
+					<li>
+						<article class="cd cd--card cd--article cd--idx-4 cd--extra-small cd--has-siblings cd--media__image" data-vr-contentbox="/2021/12/16/politics/biden-medal-of-honor-army/index.html" data-eq-pts="xsmall: 0, small: 300, medium: 460, large: 780, full16x9: 1100" data-section-name="politics" data-eq-state="xsmall small">
+							<div class="cd__wrapper" data-analytics="_list-hierarchical-xs_article_">
+								<div class="cd__content">
+									<h3 class="cd__headline" data-analytics="_list-hierarchical-xs_article_">
+										<a href="/2021/12/16/politics/biden-medal-of-honor-army/index.html">
+											<span class="cd__headline-text vid-left-enabled">Biden awards Medal of Honor to 3 soldiers, including the first African American since the Vietnam War</span>
+											<span class="cd__headline-icon cnn-icon">
+											</span>
+										</a>
+									</h3>
+								</div>
+							</div>
+						</article>
+					</li>
+					
+					
+					
+					
+					
+					<li></li>
+					<li></li>
+					
+				</div>
+			</div>				
+					
+			<div class="col-md-4">
+				<div class="media">  <img src="./imgs/211202141206-01-biden-nih-1202-large-tease.jpg" alt="" class="media__image img-fluid">
+				</div>
+				<div>
+					<a href="">
+					<h3>Biden warns of winter of 'severe illness and death' for unvaccinated due to Omicron </h3>
+					</a>
+				</div>
+				
+				<li>
+					<article class="cd cd--card cd--article cd--idx-1 cd--extra-small cd--has-siblings cd--media__image" data-vr-contentbox="/2021/12/16/politics/voting-rights-senate-sinema-manchin/index.html" data-eq-pts="xsmall: 0, small: 300, medium: 460, large: 780, full16x9: 1100" data-section-name="politics" data-eq-state="xsmall small">
+						 <div class="cd__wrapper" data-analytics="_list-hierarchical-xs_article_">
+							<div class="cd__content">
+								<h3 class="cd__headline" data-analytics="_list-hierarchical-xs_article_">
+									<a href="/2021/12/16/politics/voting-rights-senate-sinema-manchin/index.html">
+										<span class="cd__headline-text vid-left-enabled">Analysis: Here's why voting rights legislation isn't going anywhere this year</span>
+										<span class="cd__headline-icon cnn-icon">
+										</span>
+									</a>
+								</h3>
+							</div>
+						</div>
+					</article>
+				</li>
+				<li>
+					<article class="cd cd--card cd--article cd--idx-2 cd--extra-small cd--has-siblings cd--media__image" data-vr-contentbox="/2021/12/16/politics/ken-cuccinelli-january-6/index.html" data-eq-pts="xsmall: 0, small: 300, medium: 460, large: 780, full16x9: 1100" data-section-name="politics" data-eq-state="xsmall small">
+						<div class="cd__wrapper" data-analytics="_list-hierarchical-xs_article_">
+							<div class="cd__content">
+								<h3 class="cd__headline" data-analytics="_list-hierarchical-xs_article_">
+									<a href="/2021/12/16/politics/ken-cuccinelli-january-6/index.html">
+										<span class="cd__headline-text vid-left-enabled">Former Homeland Security official Cuccinelli talks to January 6 committee</span>
+										<span class="cd__headline-icon cnn-icon">
+										</span>
+									</a>
+								</h3>
+							</div>
+						</div>
+					</article>
+				</li>
+				<li>
+					<article class="cd cd--card cd--article cd--idx-3 cd--extra-small cd--has-siblings cd--media__image" data-vr-contentbox="/2021/12/16/politics/january-6-committee-subpoena-retired-colonel-power-point/index.html" data-eq-pts="xsmall: 0, small: 300, medium: 460, large: 780, full16x9: 1100" data-section-name="politics" data-eq-state="xsmall small">
+					<div class="cd__wrapper" data-analytics="_list-hierarchical-xs_article_">
+						<div class="cd__content">
+								<h3 class="cd__headline" data-analytics="_list-hierarchical-xs_article_">
+									<a href="/2021/12/16/politics/january-6-committee-subpoena-retired-colonel-power-point/index.html">
+										<span class="cd__headline-text vid-left-enabled">January 6 committee subpoenas retired colonel who shared election fraud PowerPoint presentation</span>
+										<span class="cd__headline-icon cnn-icon">
+										</span>
+									</a>
+								</h3>
+							</div>
+						</div>
+					</article>
+				</li>
+				<li>
+					<article class="cd cd--card cd--article cd--idx-4 cd--extra-small cd--has-siblings cd--media__image" data-vr-contentbox="/2021/12/16/politics/biden-medal-of-honor-army/index.html" data-eq-pts="xsmall: 0, small: 300, medium: 460, large: 780, full16x9: 1100" data-section-name="politics" data-eq-state="xsmall small">
+						<div class="cd__wrapper" data-analytics="_list-hierarchical-xs_article_">
+							<div class="cd__content">
+								<h3 class="cd__headline" data-analytics="_list-hierarchical-xs_article_">
+									<a href="/2021/12/16/politics/biden-medal-of-honor-army/index.html">
+										<span class="cd__headline-text vid-left-enabled">Biden awards Medal of Honor to 3 soldiers, including the first African American since the Vietnam War</span>
+										<span class="cd__headline-icon cnn-icon">
+										</span>
+									</a>
+								</h3>
+							</div>
+						</div>
+					</article>
+				</li>
+				
+				
+			</div>
+			
+			<div class="col-md-4">
+				<div class="media">  <img src="./imgs/211201163039-09-supreme-court-abortion-1201-medium-tease.jpg" alt="" class="media__image img-fluid"/>
+				</div>
+				<div>
+					<a href="">
+					<h3>FDA says abortion pills can be sent by mail</h3>
+					</a>
+				</div>
+				
+				<li>
+					<article class="cd cd--card cd--article cd--idx-1 cd--extra-small cd--has-siblings cd--media__image" data-vr-contentbox="/2021/12/16/politics/voting-rights-senate-sinema-manchin/index.html" data-eq-pts="xsmall: 0, small: 300, medium: 460, large: 780, full16x9: 1100" data-section-name="politics" data-eq-state="xsmall small">
+						 <div class="cd__wrapper" data-analytics="_list-hierarchical-xs_article_">
+							<div class="cd__content">
+								<h3 class="cd__headline" data-analytics="_list-hierarchical-xs_article_">
+									<a href="/2021/12/16/politics/voting-rights-senate-sinema-manchin/index.html">
+										<span class="cd__headline-text vid-left-enabled">Analysis: Here's why voting rights legislation isn't going anywhere this year</span>
+										<span class="cd__headline-icon cnn-icon">
+										</span>
+									</a>
+								</h3>
+							</div>
+						</div>
+					</article>
+				</li>
+				<li>
+					<article class="cd cd--card cd--article cd--idx-2 cd--extra-small cd--has-siblings cd--media__image" data-vr-contentbox="/2021/12/16/politics/ken-cuccinelli-january-6/index.html" data-eq-pts="xsmall: 0, small: 300, medium: 460, large: 780, full16x9: 1100" data-section-name="politics" data-eq-state="xsmall small">
+						<div class="cd__wrapper" data-analytics="_list-hierarchical-xs_article_">
+							<div class="cd__content">
+								<h3 class="cd__headline" data-analytics="_list-hierarchical-xs_article_">
+									<a href="/2021/12/16/politics/ken-cuccinelli-january-6/index.html">
+										<span class="cd__headline-text vid-left-enabled">Former Homeland Security official Cuccinelli talks to January 6 committee</span>
+										<span class="cd__headline-icon cnn-icon">
+										</span>
+									</a>
+								</h3>
+							</div>
+						</div>
+					</article>
+				</li>
+				<li>
+					<article class="cd cd--card cd--article cd--idx-3 cd--extra-small cd--has-siblings cd--media__image" data-vr-contentbox="/2021/12/16/politics/january-6-committee-subpoena-retired-colonel-power-point/index.html" data-eq-pts="xsmall: 0, small: 300, medium: 460, large: 780, full16x9: 1100" data-section-name="politics" data-eq-state="xsmall small">
+					<div class="cd__wrapper" data-analytics="_list-hierarchical-xs_article_">
+						<div class="cd__content">
+								<h3 class="cd__headline" data-analytics="_list-hierarchical-xs_article_">
+									<a href="/2021/12/16/politics/january-6-committee-subpoena-retired-colonel-power-point/index.html">
+										<span class="cd__headline-text vid-left-enabled">January 6 committee subpoenas retired colonel who shared election fraud PowerPoint presentation</span>
+										<span class="cd__headline-icon cnn-icon">
+										</span>
+									</a>
+								</h3>
+							</div>
+						</div>
+					</article>
+				</li>
+				<li>
+					<article class="cd cd--card cd--article cd--idx-4 cd--extra-small cd--has-siblings cd--media__image" data-vr-contentbox="/2021/12/16/politics/biden-medal-of-honor-army/index.html" data-eq-pts="xsmall: 0, small: 300, medium: 460, large: 780, full16x9: 1100" data-section-name="politics" data-eq-state="xsmall small">
+						<div class="cd__wrapper" data-analytics="_list-hierarchical-xs_article_">
+							<div class="cd__content">
+								<h3 class="cd__headline" data-analytics="_list-hierarchical-xs_article_">
+									<a href="/2021/12/16/politics/biden-medal-of-honor-army/index.html">
+										<span class="cd__headline-text vid-left-enabled">Biden awards Medal of Honor to 3 soldiers, including the first African American since the Vietnam War</span>
+										<span class="cd__headline-icon cnn-icon">
+										</span>
+									</a>
+								</h3>
+							</div>
+						</div>
+					</article>
+				</li>
+				
+			</div>
+	</div>
+	<p>
+		<h2 align="center" class="text-center">Top News</h2>
+	</p>
+
+	<div class="row containers">
+		<div class="col-md-4">
+			<img alt="" src="imgs/211028164646-01-joe-manchin-1028-large-tease.jpg">
+			<h2>
+				Manchin moves to strike offshore drilling ban from Senate bill
+			</h2>
+			<p>
+				A single Kentucky Republican travels with Biden to survey tornado and storm damage
+			</p>
+			<p>
+				<a class="btn" href="#">View details »</a>
+			</p>
+		</div>
+		<div class="col-md-4">
+			<img alt="" src="imgs/210106122842-01-trump-speaks-dc-protest-0106-large-tease.jpg">
+			<h2>
+				Judge sets January arguments for lawsuits seeking to hold Trump accountable for US Capitol riot
+			</h2>
+			
+		</div>
+		<div class="col-md-4">
+			<a id="aw0" target="_blank" 
+				href="" 
+				onfocus="ss('aw0')" onmousedown="st('aw0')" onmouseover="ss('aw0')" onclick="ha('aw0')">
+				<img src="https://i.cdn.turner.com/ads/adspaces/CNNEspanol/2021/12/08/585034831_SV-300X250.gif" border="0" width="300" height="250" alt="" class="img_ad">
+			</a>
+			<p>
+				
+			</p>
+			<p>
+				
+			</p>
+		</div>
+	</div>
+		
+	<div class="row containers">
+		<div class="col-md-4">
+				<img alt="" src="imgs/211215110215-mlk-iii-0828-large-tease.jpg">
+				
+				<p>
+					Martin Luther King Jr.'s family calls for 'no celebration' of MLK Day without action on voting rights legislation
+	Key officials raised alarm about care of migrant children in government custody, memo says
+	Biden administration asks public for help stopping family separation in the future
+	'We've often been viewed as expendable:' Failed infrastructure is to blame for Honolulu's water crisis
+				</p>
+				
+		</div>
+		<div class="col-md-4">
+			<img alt="" src="imgs/210913233604-afghanistan-market-0912-large-tease.jpg">
+			<p>
+				House lawmakers call on Biden administration to take steps to avert economic disaster in Afghanistan
+US military has vaccinated more than 97% of service members
+DHS secretary 'extraordinarily concerned' about latest software vulnerability that forced US Patent office to take its systems offline for 12 hours
+Senate passes annual defense bill authorizing $770 billion in Pentagon funding
+			</p>
+			
+			
+		</div>
+		<div class="col-md-4">
+			<img alt="" src="imgs/211216124149-jeff-jackson-cheri-beasley-split-large-tease.jpg">
+			<p>
+				Jackson bows out of Democratic Senate primary in North Carolina, largely clearing field for Beasley
+Democratic Rep. Alan Lowenthal announces he will not seek reelection in 2022
+Independent redistricting panels aim to draw fairer maps but still invite controversy
+GOP leaders seek to fend off Trump endorsement as far-right Republican eyes Illinois primary bid
+			</p>
+		</div>
+	</div>
+
+	<div class="row containers">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-4">
+					
+				</div>
+				<div class="col-md-4">
+					<img alt="" src="imgs/211109123019-01-greg-abbott-file-large-tease.jpg">
+					<p>
+						<h2>Abbott joins 6 other GOP governors in asserting Pentagon has no authority to punish unvaccinated National Guardsmen</h2>
+					</p>
+				</div>
+				<div class="col-md-4">
+					<img alt="" src="imgs/">
+					
+					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					
+					
+				</div>
+				<div class="col-md-4">
+					
+				</div>
+				<div class="col-md-4">
+					
+				</div>
+			</div>
+					<div class="row">
+						<div class="col-md-4">
+							
+						</div>
+						<div class="col-md-4">
+							
+						</div>
+						<div class="col-md-4">
+							
+						</div>
+					</div>
+		</div>
+	</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+                <form action="/search" name="q" class="col-lg-12 pt-1 pb-1">
+                    <input type="search" autocomplete="off" id="header-search-bar" name="q" placeholder="Search CNN..." data-zjs="click" data-zjs-campaign="header-expanded-search-btn" class="col-lg-10 pt-1 pb-1">
+                        <button color="inherit" width="24,,80" tabindex="0" aria-label="Search" class="nav-item col-lg-1 pt-0 pb-0">
+                            <div class="" font-size=",,12">Search</div>
+                            <div class="" display="none,,block">
+                                <svg class="arrow-right-10-icon" style="outline:0" width="10" height="10" viewBox="0 0 20 20" fill="#4D4D4D" tabindex="-1" focusable="false" xmlns="https://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M1.53,8.52H14.76L10,3.71a1.5,1.5,0,0,1,2.12-2.12l7.44,7.47a1.49,1.49,0,0,1,0,2.12l-7.44,7.47a1.5,1.5,0,0,1-2.12,0,1.51,1.51,0,0,1,0-2.12l5-5H1.53a1.5,1.5,0,1,1,0-3Z"></path>
+                                </svg>
+                            </div>
+                            <!--div class="col-lg-1 pt-0 pb-0" display="block,,none">
+                                <svg class="search-icon" style="outline:0" width="24" height="24" viewBox="0 0 64 64" fill="#4D4D4D" tabindex="-1" focusable="false" xmlns="https://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M55.3,51.89,42.46,39a19.22,19.22,0,1,0-3.38,3.43L51.9,55.29a2.38,2.38,0,0,0,3.4,0A2.42,2.42,0,0,0,55.3,51.89ZM11.2,27.28a16,16,0,1,1,16,16.07A16.07,16.07,0,0,1,11.2,27.28Z">
+                                    </path>
+                                </svg>
+                            </div-->
+                        </button>
+                </form>
+            </div>
+			<div class="row">
+				<div class="col-lg-2 pt-0 pb-0">
+					<ul class="list-unstyled">
+						<li class="list-item">World</li>
+						<li class="list-item">
+							<a href="">Africa</a></li>
+						<li class="list-item">
+							<a href="">Americas</a></li>
+						<li class="list-item">
+							<a href="">Asia</a></li>
+						<li class="list-item">
+							<a href="">Australia</a></li>
+						<li class="list-item">
+							<a href="">China</a></li>
+						<li class="list-item">
+							<a href="">Europe</a></li>
+						<li class="list-item">
+							<a href="">India</a></li>
+						<li class="list-item">
+								<a href="">Midle East</a></li>
+							<li class="list-item">
+								<a href="">United Kingdom</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 pt-0 pb-0">
+					<ul class="list-unstyled">
+						<li class="list-item">US Politics</li>
+						<li class="list-item">
+							<a href="">The Biden Presidency</a></li>
+						<li class="list-item">
+							<a href="">Facts First</a></li>
+						<li class="list-item">
+							<a href="">US Elections</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 pt-0 pb-0">
+					<ul class="list-unstyled">
+						<li class="list-item">Business</li>
+						<li class="list-item">
+							<a href="">Markets</a></li>
+						<li class="list-item">
+							<a href="">Tech</a></li>
+						<li class="list-item">
+							<a href="">Media</a></li>
+						<li class="list-item">
+							<a href="">Success</a></li>
+						<li class="list-item">
+							<a href="">Perspectves</a></li>
+						<li class="list-item">
+							<a href="">Videos</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 pt-0 pb-0">
+					<ul class="list-unstyled">
+						<li class="list-item">Health</li>
+						<li class="list-item">
+							<a href="">Life, But Better</a></li>
+						<li class="list-item">
+							<a href="">Fitness</a></li>
+						<li class="list-item">
+							<a href="">Food</a></li>
+						<li class="list-item">
+							<a href="">Sleep</a></li>
+						<li class="list-item">
+							<a href="">Mindfulness</a></li>
+						<li class="list-item">
+							<a href="">Relationships</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 pt-0 pb-0">
+					<ul class="list-unstyled">
+						<li class="list-item">Entertainment</li>
+						<li class="list-item">
+							<a href="">Stars</a></li>
+						<li class="list-item">
+							<a href="">Screen</a></li>
+						<li class="list-item">
+							<a href="">Binge</a></li>
+						<li class="list-item">
+							<a href="">Culture</a></li>
+						<li class="list-item">
+							<a href="">Media</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 pt-0 pb-0">
+					<ul class="list-unstyled">
+						<li class="list-item">Tech</li>	
+						<li class="list-item">
+							<a href="">Innovate</a></li>
+						<li class="list-item">
+							<a href="">Gadget</a></li>
+						<li class="list-item">
+							<a href="">Foreseeable Future</a></li>
+						<li class="list-item">
+							<a href="">Mission: Ahead</a></li>
+							<li class="list-item">
+								<a href="">Upstarts</a></li>
+							<li class="list-item">
+								<a href="">Work Transformed</a></li>
+							<li class="list-item">
+								<a href="">Innovative Cities</a></li>
+					</ul>
+				</div>
+				
+				<div class="col-lg-2 pt-0 pb-0">
+					<ul class="list-unstyled">
+						<li class="list-item">Style</li>	
+						<li class="list-item">
+							<a href="">Arts</a></li>
+						<li class="list-item">
+							<a href="">Design</a></li>
+						<li class="list-item">
+							<a href="">Fashion</a></li>
+						<li class="list-item">
+							<a href="">Architecture</a></li>
+							<li class="list-item">
+								<a href="">Luxury</a></li>
+							<li class="list-item">
+								<a href="">Beauty</a></li>
+							<li class="list-item">
+								<a href="">Video</a></li>
+					</ul>
+				</div>
+				
+				<div class="col-lg-2 pt-0 pb-0">
+					<ul class="list-unstyled">
+						<li class="list-item">Sports</li>
+						<li class="list-item">
+							<a href="">Football</a></li>
+						<li class="list-item">
+							<a href="">Tennis</a></li>
+						<li class="list-item">
+							<a href="">Golf</a></li>
+						<li class="list-item">
+							<a href="">Tokyo 2020</a></li>
+						<li class="list-item">
+							<a href="">US Sports</a></li>
+						<li class="list-item">
+							<a href="">Climbing</a></li>
+						<li class="list-item">
+							<a href="">Motorsport</a></li>
+						<li class="list-item">
+								<a href="">Formula E</a></li>
+							<li class="list-item">
+								<a href="">Esports</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 pt-0 pb-0">
+					<ul class="list-unstyled">
+						<li class="list-item">Travel</li>
+						<li class="list-item">
+							<a href="">Destinations</a></li>
+						<li class="list-item">
+							<a href="">Food and Drink</a></li>
+						<li class="list-item">
+							<a href="">Stay</a></li>
+						<li class="list-item">
+							<a href="">Newa</a></li>
+						<li class="list-item">
+							<a href="">Videos</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 pt-0 pb-0">
+					<ul class="list-unstyled">
+						<li class="list-item">Videos</li>
+						<li class="list-item">
+							<a href="">Markets</a></li>
+						<li class="list-item">
+							<a href="">Live TV</a></li>
+						<li class="list-item">
+							<a href="">Digital Studios</a></li>
+						<li class="list-item">
+							<a href="">CNN Films</a></li>
+						<li class="list-item">
+							<a href="">HLN</a></li>
+						<li class="list-item">
+							<a href="">TV Schedule</a></li>
+						<li class="list-item">
+							<a href="">TV Shows A-Z</a></li>
+						<li class="list-item">
+							<a href="">CNNVR</a></li>						
+					</ul>
+				</div>
+				<div class="col-lg-2 pt-0 pb-0">
+					<ul class="list-unstyled">
+						<li class="list-item">Weather</li>
+						<li class="list-item">
+							<a href="">Storm Tracker</a></li>
+						<li class="list-item">
+							<a href="">Wildfire Tracker</a></li>
+						<li class="list-item">
+							<a href="">Video</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 pt-0 pb-0">
+					<ul class="list-unstyled">
+						<li class="list-item">More</li>
+						<li class="list-item">
+							<a href="">Photos</a></li>
+						<li class="list-item">
+							<a href="">Longform</a></li>
+						<li class="list-item">
+							<a href="">Investigations</a></li>
+						<li class="list-item">
+							<a href="">CNN Profiles</a></li>
+						<li class="list-item">
+							<a href="">CNN Leadership</a></li>
+						<li class="list-item">
+							<a href="">CNN Newsletters</a></li>
+						<li class="list-item">
+							<a href="">Work for CNN</a></li>
+					</ul>
+				</div>
+				
+				<div class="col-lg-12 pt-0 pb-0 border-top">
+					<ul class="list-inline finalfoot">
+						<li class="list-inline-item">
+							<a href="">Terms of Use</a></li>
+						<li class="list-inline-item">
+							<a href="">Privacy Policy</a></li>
+						<li class="list-inline-item">
+							<a href="">Accessibility &amp; CC</a></li>
+						<li class="list-inline-item">
+							<a href="">Ad Choices</a></li>
+						<li class="list-inline-item">
+							<a href="">About Us</a></li>
+						<li class="list-inline-item">
+							<a href="">Modern Slavery Act Statement</a></li>	
+						<li class="list-inline-item">
+							<a href="">Advertise with us
+							</a></li>
+						<li class="list-inline-item">
+							<a href="">CNN Store</a></li>
+						<li class="list-inline-item">
+							<a href="">Newsletters</a></li>	
+							<li class="list-inline-item">
+								<a href="">Transcripts</a></li>
+							<li class="list-inline-item">
+								<a href="">License Footage</a></li>
+							<li class="list-inline-item">
+								<a href="">CNN Newsource
+								</a></li>
+							<li class="list-inline-item">
+								<a href="">Sitemap</a></li>							
+					</ul>
+				</div>
+				<div class="col-lg-12 pt-0 pb-0 border-top">
+					<ul class="list-inline finalfoot">
+						<li class="list-inline-item">
+							<a href="">© 2021 Cable News Network</a></li>
+						<li class="list-inline-item">
+							<a href="">A Warner Media Company</a></li>
+						<li class="list-inline-item">
+							<a href="">All Rights Reserved.</a></li>
+					</ul>
+					<ul class="list-inline finalfoot">
+						<li class="list-inline-item"CNN Sans ™ & © 2016 Cable News Network.</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+  </body>
+</html>
